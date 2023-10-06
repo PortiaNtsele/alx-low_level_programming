@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes here */
-
+#include <stdio.h>
 /* betty style doc for function main goes there */
+/**
+ * main - main function
+ * Return: always 0
+ */
 int main(void)
 {
 	int n;
@@ -16,6 +20,6 @@ int main(void)
 		printf("%d is zero", n);
 	else
 		printf("%d is negative", n);
-	printf("\n")
+	printf("\n");
 		return (0);
 }
