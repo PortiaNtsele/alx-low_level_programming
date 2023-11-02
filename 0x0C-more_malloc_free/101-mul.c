@@ -54,7 +54,6 @@ return (str);
 * get_digit - Converts a digit character to a corresponding int.
 * @c: The character to be converted.
 * Description: If c is a non-digit, the function
-* exits with a status of 98.
 * Return: The converted int.
 */
 int get_digit(char c)
@@ -175,8 +174,7 @@ for (index = find_len(argv[2]) - 1; index >= 0; index--)
 digit = get_digit(*(argv[2] + index));
 get_prod(next_prod, argv[1], digit, zeroes++);
 add_nums(final_prod, next_prod, size - 1);
-}
-for (index = 0; final_prod[index]; index++)
+} for (index = 0; final_prod[index]; index++)
 {
 if (final_prod[index] != 'x')
 putchar(final_prod[index]);
